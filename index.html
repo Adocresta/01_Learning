@@ -16,7 +16,10 @@
         
         <nav>
             <ul>
-                <li><a href="#htlm">Learn HTML</a></li>
+                <li><a href="#Entry">Learn HTML</a></li>
+                    <ul>
+                      <li><a href="#addingAnImage&LazyLoadingAttribute">Adding images and Lazy Attribute</a></li>  
+                    </ul>
                 <li><a href="#Abbr_and_Ordered_list">Abbr and Ordered list</a></li>
                 <li><a href="#Description_List">Description List</a></li>
                 <li>Features of HTML</li>
@@ -25,7 +28,7 @@
                 </ul>
                 <li><a href="about.html">About Me</a></li>
                 <ul>
-                    <li><a href="about.html#Download_and_links">Download_and_links</a></li>
+                    <li><a href="about.html#Download_and_links">Downloads and Links</a></li>
                 </ul>
             </ul>
         </nav>
@@ -36,7 +39,24 @@
             <hr> <!--*The Thematic Break-->
             
             <h2>Let's learn HTML!</h2>
-            <p>my first web page yay</p>
+            <p>My first web page!</p>
+
+            <section id="addingAnImage&LazyLoadingAttribute">
+                <!-- *Adding an image widht and height is recommended-->
+                <img src="img/cool_coding.png" alt="Coding Image" title="Coding Image" width="350" height="180" loading="lazy">
+                <figure>
+                    <figcaption>Look at my code! ( ͡° ͜ʖ ͡°)</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>    
+                    </p>
+                </figure>
+                <p>loading="lazy" loading attribute</p>
+                <figure>
+                    <p>We can demonstrate it by adding <abbr title="Autocompletes the same line 150 times"><strong>br*150</strong></abbr></p>
+                    <img src="img/Lazy_Loading_Attribute.PNG" alt="Lazy_Loading_Attribute" title="Lazy_Loading_Attribute" width="800" height="150" loading="lazy">
+                    <figcaption>Demonstration of different attributes for <strong>img</strong></figcaption>
+                </figure>
+            </section>
 
         </section>
 
