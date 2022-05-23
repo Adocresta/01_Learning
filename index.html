@@ -1,119 +1,266 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8"> 
-        <meta name="author" content="Onur Tas">
-        <meta name="description" content="this page contains my htlm learning asdasfasdfgsdafd">
-        <title>Onurbey</title>
-        <link rel="icon" href="site_icon.png" type="image/x-icon">
-        <link rel="stylesheet" href="main.css" type="text/css">
-    </head>
-    <body>
-
-        <h1>Hello World!</h1>
-        
-        <hr>
-        
-        <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Onur Tas" />
+    <meta
+      name="description"
+      content="this page contains my htlm learning asdasfasdfgsdafd"
+    />
+    <title>Onurbey</title>
+    <link rel="icon" href="site_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <!-- *We have 3 main areas in a page header, main and footer -->
+    <header>
+      <h1>Features of HTML</h1>
+      <!-- implemented to quicly navigate in the current page -->
+      <nav aria-label="primary-navigation">
+        <!-- <h2 id="primary-navigation">Primary Navigation</h2> you can make is aria-labelledby="primary-navigation" -->
+        <ul>
+          <li>
+            <a href="#Entry">Learn HTML</a>
             <ul>
-                <li><a href="#Entry">Learn HTML</a>
-                    <ul>
-                        <li><a href="#addingAnImage&LazyLoadingAttribute">Adding images and Lazy Attribute</a></li> 
-                    </ul>
-                </li>
-                <li><a href="#Abbr_and_Ordered_list">Abbr and Ordered list</a></li>
-                <li><a href="#Description_List">Description List</a></li>
-                <li>Features of HTML
-                    <ul>
-                        <li><a href="FeaturesOfHTML/Emphasize&breaks.html" target="_blank" rel="noopener noreferrer"><abbr title="Different web page">Emphasizee and breaks</abbr></a></li>
-                    </ul>
-                </li>
-                <li><a href="about.html">About Me</a>
-                    <ul>
-                        <li><a href="about.html#Download_and_links">Downloads and Links</a></li>
-                    </ul>
-                </li>
+              <li>
+                <a href="#addingAnImage&LazyLoadingAttribute"
+                  >Adding images and Lazy Attribute</a
+                >
+              </li>
             </ul>
-        </nav>
-        
-        <section id="Entry"> <!-- *Section-->
-
-            
-            <hr> <!--*The Thematic Break-->
-            
-            <h2>Let's learn HTML!</h2>
-            <p>My first web page!</p>
-
-            <section id="addingAnImage&LazyLoadingAttribute">
-                <h3>Adding an Image</h3>
-                <!-- *Adding an image widht and height is recommended-->
-                <img src="img/cool_coding.png" alt="Coding Image" title="Coding Image" width="350" height="180" loading="lazy">
-                <figure>
-                    <figcaption>Look at my code! ( ͡° ͜ʖ ͡°)</figcaption>
-                    <p>
-                        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>    
-                    </p>
-                </figure>
-                <p>loading="lazy" loading attribute</p>
-                <figure>
-                    <p>We can demonstrate it by adding <abbr title="Autocompletes the same line 150 times"><strong>br*150</strong></abbr></p>
-                    <img src="img/Lazy_Loading_Attribute.PNG" alt="Lazy_Loading_Attribute" title="Lazy_Loading_Attribute" width="800" height="150" loading="lazy">
-                    <figcaption>Demonstration of different attributes for <strong>img</strong></figcaption>
-                </figure>
-            </section>
-
-        </section>
-
-        <section id="Abbr_and_Ordered_list">
-
-            <!--some ppl may not access this mobile shitters-->
-            <h3>abbr tooltip</h3>
-            <p>THIS IS AN <abbr title="Ordered list">OL</abbr></p>
-            <ol type="a">
-                <li>It is a good resource innit!</li>
-                <li>It is a good resource innit!</li>
-                <li>you can add type="a" for more customization</li>
-            </ol>
-            
-            <!--unordered list-->
-            <h3>This is an example of -&gt; <abbr title="UL">Unordered list</abbr></h3>
+          </li>
+          <li><a href="#Abbr_and_Ordered_list">Abbr and Ordered list</a></li>
+          <li><a href="#Description_List">Description List</a></li>
+          <li>
+            Features of HTML
             <ul>
-                <li>I am a big 🧠</li>
-                <li>This is a good way to do thnigs!</li>
-                <li>This is a good way to do thnigs!</li>
+              <li>
+                <a
+                  href="FeaturesOfHTML/Emphasize&breaks.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><abbr title="Different web page"
+                    >Emphasizee and breaks</abbr
+                  ></a
+                >
+              </li>
             </ul>
-            
+          </li>
+          <li>
+            <a href="about.html">About Me</a>
+            <ul>
+              <li>
+                <a href="about.html#Download_and_links">Downloads and Links</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#Marking&adding_Time_context&Hidden_Info_Tab"
+              >Marking & Adding Time Context & Hidden Info Tab</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article id="Entry">
+        <!-- *Section-->
+        <!-- hr adds semantic meaning like a topic change -->
+        <hr />
+        <!--*The Thematic Break-->
+        <h2>Let's learn HTML!</h2>
+        <p>My first web page!</p>
+        <section id="addingAnImage&LazyLoadingAttribute">
+          <h3>Adding an Image</h3>
+          <!-- *Adding an image widht and height is recommended-->
+          <img
+            src="img/cool_coding.png"
+            alt="Coding Image"
+            title="Coding Image"
+            width="350"
+            height="180"
+            loading="lazy"
+          />
+          <!-- *figures are not just for images! -->
+          <figure>
+            <figcaption>Look at my code! ( ͡° ͜ʖ ͡°)</figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+          <!-- Aside is complementery info -->
+          <aside>
+            <!-- A bar that contains hidden information usually used to tell about warranty -->
+            <details>
+              <summary>loading="lazy" loading attribute</summary>
+              <figure>
+                <p>
+                  We can demonstrate it by adding
+                  <abbr title="Autocompletes the same line 150 times"
+                    ><strong>br*150</strong></abbr
+                  >
+                </p>
+                <img
+                  src="img/Lazy_Loading_Attribute.PNG"
+                  alt="Lazy_Loading_Attribute"
+                  title="Lazy_Loading_Attribute"
+                  width="800"
+                  height="150"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Demonstration of different attributes for <strong>img</strong>
+                </figcaption>
+              </figure>
+            </details>
+          </aside>
         </section>
-
-        <section id="Description_List">
-
+      </article>
+      <article id="Abbr_and_Ordered_list">
+        <!--some ppl may not access this mobile shitters-->
+        <h3>abbr tooltip</h3>
+        <p>THIS IS AN <abbr title="Ordered list">OL</abbr></p>
+        <ol type="a">
+          <li>It is a good resource innit!</li>
+          <li>It is a good resource innit!</li>
+          <li>you can add type="a" for more customization</li>
+        </ol>
+        <!--unordered list-->
+        <h3>
+          This is an example of -&gt; <abbr title="UL">Unordered list</abbr>
+        </h3>
+        <ul>
+          <li>I am a big 🧠</li>
+          <li>This is a good way to do thnigs!</li>
+          <li>This is a good way to do thnigs!</li>
+        </ul>
+      </article>
+      <article id="Description_List">
         <!--description list DT AND DD -->
-        <h3>This is an example of -&gt; <abbr title="description list">DL</abbr></h3>
+        <h3>
+          This is an example of -&gt; <abbr title="description list">DL</abbr>
+        </h3>
         <dl>
-            <dt>I am a big 🧠</dt>
-            <dd>dis is a <strong>feature</strong></dd>
-            <dt>dis is a <strong>feature</strong></dt>
-            <dd>dis is a <strong>feature</strong></dd>
+          <dt>I am a big 🧠</dt>
+          <dd>dis is a <strong>feature</strong></dd>
+          <dt>dis is a <strong>feature</strong></dt>
+          <dd>dis is a <strong>feature</strong></dd>
         </dl>
-        
-        </section>
-
-        <section id="links">
-
+      </article>
+      <article id="links">
         <!--Links-->
         <h3>Lets learn how to add links</h3>
         <p>Here is a good list of useful links</p>
         <ul>
-            <li>We have <abbr title="NU checker"><a href="https://validator.w3.org/nu" target="_blank" rel="noopener noreferrer">NU</a></abbr></li>
+          <li>
+            We have
+            <abbr title="NU checker"
+              ><a
+                href="https://validator.w3.org/nu"
+                target="_blank"
+                rel="noopener noreferrer"
+                >NU</a
+              ></abbr
+            >
+          </li>
         </ul>
-        
-        </section>
-
-        <hr> <!-- generic info tool-->
-        <p><a href="about.html">Onurbey</a></p>
-        <!-- * using '#' only takes us bact to the top-->
-        <p><a href="#">Back to Top</a></p>
-        <h3>Adress Element</h3>
-        <address>123 Main Street<br> New York<br> NY 10030</address>
-    </body>
+      </article>
+      <article id="Marking&adding_Time_context&Hidden_Info_Tab">
+        <h2>Learning Code Takes a lot of Time</h2>
+        <ul>
+          <li>You need to be consistent!</li>
+          <li>
+            You need to code at least <time datetime="PT3H">3 hours</time> a
+            day!
+          </li>
+        </ul>
+        <aside>
+          <details>
+            <summary>
+              Guess the <mark>number of hours</mark> I code per day.
+            </summary>
+            I myself code <time datetime="PT5H">5 hours</time> a day starting
+            from at <time datetime="08:00">8 AM</time> in the morning! Moreover
+            I coded <time datetime="PT8H30M">8 hours and a half</time> on
+            <time datetime="2022-05-23">May 23</time>. I know that was a crazy
+            day!. However, I don't think I can keep up with this.
+          </details>
+          <br />
+          <!-- Table element which has rows and colon also table headers -->
+          <table>
+            <caption>
+              My Daily Schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>&ThinSpace;</th>
+                <!-- Scope tells us the items on the table are both Time and morning and both activity and morning we can give these items id instead too-->
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="1strow">
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time>-<time datetime="11:00"
+                    >11am</time
+                  >
+                </td>
+                <td>Write Code</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="11:00">11am</time>-<time datetime="12:00"
+                    >12pm</time
+                  >
+                </td>
+                <td>Eat Lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="12:00">12pm</time>-<time datetime="13:00"
+                    >1pm</time
+                  >
+                </td>
+                <td>Take a shower</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td colspan="2">Free Time</td>
+              </tr>
+              <tr>
+                <th scope="row" rowspan="1">Evening</th>
+                <td rowspan="2">All Other Times</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                  <th scope="row" >Night</th>
+                  <td>Sleep</td>
+                </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">And that's what I do everyday.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </aside>
+      </article>
+    </main>
+    <hr />
+    <footer>
+      <p><a href="about.html">&copy; Onurbey</a></p>
+      <!-- * using '#' only takes us bact to the top-->
+      <p><a href="#">Back to Top</a></p>
+      <h3>Adress Element</h3>
+      <address>
+        123 Main Street<br />
+        New York<br />
+        NY 10030
+      </address>
+    </footer>
+  </body>
 </html>
