@@ -25,3 +25,12 @@ table, tr, th, td, caption {
     border-collapse: collapse;
     padding: 0.5rem;
 }
+
+div:hover {
+    color:  darkcyan
+}
+
+textarea {
+    background-color: rgb(134, 133, 133);
+    color: rgb(255, 255, 255);
+}
